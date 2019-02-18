@@ -1,0 +1,343 @@
+.alert, .warning, .success, .neutral {
+  padding: 20px;
+  color: #1E5559;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #1E5559;
+  margin-bottom: 15px; }
+  .alert .closebtn, .warning .closebtn, .success .closebtn, .neutral .closebtn {
+    margin-left: 15px;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s; }
+
+.button_danger, .button_validate, .button_warning, .button_neutral, .button_outline_neutral, .button_outline_danger, .button_outline_warning, .button_outline_validate {
+  border-width: 2px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px; }
+
+.big_button_validate, .big_button_danger, .big_button_neutral, .big_button_warning {
+  border-width: 2px;
+  padding: 25px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px; }
+
+.small_button_validate, .small_button_danger, .small_button_neutral, .small_button_warning {
+  border-width: 2px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px; }
+
+.rectangle {
+  width: 100px;
+  height: 100px;
+  font-family: 'Nunito';
+  color: White; }
+
+.colors_container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap; }
+
+#rectangle_1 {
+  background-color: #A9132A; }
+
+#rectangle_2 {
+  background-color: #c2a500; }
+
+#rectangle_3 {
+  background-color: #276D94; }
+
+#rectangle_4 {
+  background-color: #ff6600; }
+
+#rectangle_5 {
+  background-color: #574D4A; }
+
+#rectangle_6 {
+  background-color: #C9C4BC; }
+
+#rectangle_7 {
+  background-color: #F3EDE4; }
+
+h1, h2 {
+  font-family: 'Nunito'; }
+
+h3, h4, h5, h6 {
+  font-family: 'Montserrat'; }
+
+p {
+  font-family: 'Nunito'; }
+
+/*
+CHECKBOXES ********************************************************
+*/
+.checkbox_container {
+  font-family: 'Montserrat';
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* Hide the browser's default checkbox */
+.checkbox_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee; }
+
+/* On mouse-over, add a grey background color */
+.checkbox_container:hover input ~ .checkmark {
+  background-color: #276D94; }
+
+/* When the checkbox is checked, add a blue background */
+.checkbox_container input:checked ~ .checkmark {
+  background-color: #276D94; }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+/* Show the checkmark when checked */
+.checkbox_container input:checked ~ .checkmark:after {
+  display: block; }
+
+/* Style the checkmark/indicator */
+.checkbox_container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/*
+ ******************************************************************
+*/
+/*
+RADIOBUTTONS ********************************************************
+*/
+.buttons_container {
+  font-family: 'Montserrat';
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* Hide the browser's default radio button */
+.buttons_container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0; }
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%; }
+
+/* On mouse-over, add a grey background color */
+.buttons_container:hover input ~ .checkmark {
+  background-color: #276D94; }
+
+/* When the radio button is checked, add a blue background */
+.buttons_container input:checked ~ .checkmark {
+  background-color: #276D94; }
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+/* Show the indicator (dot/circle) when checked */
+.buttons_container input:checked ~ .checkmark:after {
+  display: block; }
+
+/* Style the indicator (dot/circle) */
+.buttons_container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white; }
+
+/*
+ ******************************************************************
+*/
+.alert {
+  border-color: #A9132A;
+  color: #A9132A;
+  background-color: rgba(169, 19, 42, 0.2); }
+
+.warning {
+  border-color: #ff6600;
+  color: #ff6600;
+  background-color: rgba(255, 102, 0, 0.2); }
+
+.success {
+  border-color: #1E5559;
+  color: #1E5559;
+  background-color: rgba(30, 85, 89, 0.2); }
+
+.neutral {
+  border-color: #276D94;
+  color: #276D94;
+  background-color: rgba(39, 109, 148, 0.2); }
+
+.button_danger {
+  border-color: #A9132A;
+  color: White;
+  background-color: #A9132A; }
+
+.button_validate {
+  border-color: #1E5559;
+  color: white;
+  background-color: #1E5559; }
+
+.button_warning {
+  border-color: #ff6600;
+  color: White;
+  background-color: #ff6600; }
+
+.button_neutral {
+  border-color: #276D94;
+  color: white;
+  background-color: #276D94; }
+
+.button_outline_neutral {
+  border-color: #276D94;
+  color: #276D94;
+  background-color: White; }
+
+.button_outline_danger {
+  border-color: #A9132A;
+  color: #A9132A;
+  background-color: White; }
+
+.button_outline_warning {
+  border-color: #ff6600;
+  color: #ff6600;
+  background-color: White; }
+
+.button_outline_validate {
+  border-color: #1E5559;
+  color: #1E5559;
+  background-color: White; }
+
+.big_button_validate {
+  border-color: #1E5559;
+  color: white;
+  background-color: #1E5559; }
+
+.big_button_danger {
+  border-color: #A9132A;
+  color: White;
+  background-color: #A9132A; }
+
+.big_button_neutral {
+  border-color: #276D94;
+  color: White;
+  background-color: #276D94; }
+
+.big_button_warning {
+  border-color: #ff6600;
+  color: White;
+  background-color: #ff6600; }
+
+.small_button_validate {
+  border-color: #1E5559;
+  color: white;
+  background-color: #1E5559; }
+
+.small_button_danger {
+  border-color: #A9132A;
+  color: White;
+  background-color: #A9132A; }
+
+.small_button_neutral {
+  border-color: #276D94;
+  color: White;
+  background-color: #276D94; }
+
+.small_button_warning {
+  border-color: #ff6600;
+  color: White;
+  background-color: #ff6600; }
+
+input[type="text"] {
+  height: 30px;
+  width: 200px;
+  font-size: 19px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-left: 20px;
+  font-family: 'Montserrat'; }
+
+input[type="area"] {
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: vertical; }
+
+.styled-select select {
+  background: transparent;
+  width: 268px;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px; }
+
+/*# sourceMappingURL=style.css.map */
